@@ -45,7 +45,7 @@ Assets/
 
 ---
 
-## 🚩 Core Development
+## Core Development
 
 ### 🔹 Phase 1（Basic mechanics）
 
@@ -67,7 +67,7 @@ Assets/
 
 ---
 
-## 📅 时间规划
+## 时间规划
 
 
 ## 免费音乐与音效资源
