@@ -47,7 +47,7 @@ Assets/
 
 ## 🚩 Core Development
 
-### 🔹 Phase 1（Basical mechanics）
+### 🔹 Phase 1（Basic mechanics）
 
 1. **玩家移动控制**（PlayerController）
 2. **敌人生成和移动逻辑**（EnemySpawner、EnemyMovement）
