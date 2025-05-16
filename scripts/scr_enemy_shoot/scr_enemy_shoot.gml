@@ -1,3 +1,4 @@
+// 子弹typle待test
 function scr_enemy_shoot(ent) {
 
     switch (ent.shoot_type) {

@@ -1,3 +1,4 @@
+//敌人移动代码
 function scr_enemy_move(ent)
 {
     // 预计算将要去的位置
@@ -5,11 +6,11 @@ function scr_enemy_move(ent)
 
     switch (ent.move_type)
     {
-        // ① 不动
+        // 1 不动
         case MOVE_TYPE.STAY:
-            return;     // 直接退出，省性能
+            return;     
 
-        // ② 直线移动，可反弹
+        // 2 linear移动，遇到solide砖块反弹
         case MOVE_TYPE.LINEAR:
             nx = ent.x + lengthdir_x(ent.speed, ent.direction);
             ny = ent.y + lengthdir_y(ent.speed, ent.direction);
@@ -22,7 +23,7 @@ function scr_enemy_move(ent)
             }
             break;
 
-        // ③ 圆形移动：仅改方向角度，坐标照线性算
+        // 3 圆形移动：仅改方向角度，坐标照线性算
         case MOVE_TYPE.CIRCLE:
             ent.direction = (ent.direction + 2) mod 360;
             nx = ent.x + lengthdir_x(ent.speed, ent.direction);
@@ -34,7 +35,7 @@ function scr_enemy_move(ent)
             }
             break;
 
-        // ④ 随机游走：偶尔换随机朝向
+        // 4 随机游走：偶尔换随机朝向（待调整）
         case MOVE_TYPE.RANDOM:
             if (irandom(60) == 0) ent.direction = irandom(359);
             nx = ent.x + lengthdir_x(ent.speed, ent.direction);
@@ -48,7 +49,7 @@ function scr_enemy_move(ent)
             break;
     }
 
-    // 真正移动：只有在“没撞墙”时才执行
+    // 真正移动：在“没撞墙”时才执行
     ent.x = nx;
     ent.y = ny;
 }

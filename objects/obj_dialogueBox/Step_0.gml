@@ -3,7 +3,7 @@
 // ── 打字推进 ──────────────────────────────
 progress += spd;
 
-// 每出现新字符 → 播放一次音效
+// sound: 每出现新字符 → 播放一次音效
 var cur_char = floor(progress);
 if (cur_char > last_char && cur_char <= string_length(lines[index]))
 {

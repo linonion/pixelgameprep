@@ -1,10 +1,10 @@
 /// obj_npc_parent → Collision with obj_player
 //
-// 依赖字段（都在子类 Create 或 Hub 控制器里填好）：
-// level_id      : 0 / 1 / 2 …（与 global.level_cleared 同索引）
+// 依赖字段：都在子类 Create 或 Hub 控制器里填好
+// level_id      : 0 / 1 / 2
 // status        : -1=未解锁, 0=已解锁未通关, 1=已通关
-// dialogue_file : "dialog/npc0.txt"  等（关卡前对白）
-// speaker_name  : 对话框左侧显示名
+// dialogue_file : "npc0.txt"  等
+// speaker_name  : 对话框显示名
 //
 
 // ---------- 1. 选对白文件 & target_room ----------
@@ -14,7 +14,7 @@ var tgt_room = -1;                         // -1 = 对话完留在原房
 switch (status)
 {
     case -1:                               // 尚未解锁
-        dlg_file = "locked.txt";    // 自己建一个简单提示
+        dlg_file = "locked.txt";    // 关卡未解锁文档
         break;
 
     case 0:                                // 已解锁，可进关
@@ -22,7 +22,7 @@ switch (status)
         tgt_room = global.rm_level_array[level_id];   // rm_level_npcX
         break;
 
-    case 1:                                // 已通关，感谢对白
+    case 1:                                // 已通关，thanks_x.txt
         dlg_file = "thanks_" + string(level_id) + ".txt";
         break;
 }

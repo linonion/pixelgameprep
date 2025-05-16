@@ -1,7 +1,7 @@
 /// obj_breakable → Destroy
-// audio_play_sound(snd_brick_break, 0, false);   // 如有音效
+// audio_play_sound(snd_brick_break, 0, false);   // sound
 
-var pieces = 6;                                // 想炸几块碎片
+var pieces = 6;                                // number of pieces
 for (var i = 0; i < pieces; i++)
 {
     var ang = irandom(359);

@@ -4,7 +4,7 @@ if (instance_exists(obj_dialogueBox)) exit;   // 避免多开
 
 var dlg_file;
 
-// ① 最先判断 intro
+// 1 最先判断 intro
 if (!global.mengpo_intro_done)
 {
     dlg_file = "mengpo_intro.txt";
@@ -12,7 +12,7 @@ if (!global.mengpo_intro_done)
 }
 else
 {
-    // ② 按当前通关进度判断一次性对话
+    // 2 按当前通关进度判断一次性对话
     if (global.level_cleared[2] == 1 && !global.mengpo_after2_done)
     {
         dlg_file = "mengpo_after2.txt";
@@ -30,13 +30,13 @@ else
     }
     else
     {
-        // ③ 普通情况下：随机挑一句
+        // 3 普通情况下：随机挑一句
         var rand_lines = scr_load_txt("mengpo_random.txt");
         dlg_file      = "";                             // 不用外部文件
     }
 }
 
-// ④ 生成对白框
+// 4 生成对白框
 var lines;
 if (dlg_file != "")
 {
@@ -44,7 +44,7 @@ if (dlg_file != "")
 }
 else
 {
-    // 随机对白文件：rand_lines 已在上面取到
+    // 随机对白文件
     var rnd = irandom(array_length(rand_lines)-1);
     lines = [ rand_lines[rnd] ];
 }

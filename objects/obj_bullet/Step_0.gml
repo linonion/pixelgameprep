@@ -1,16 +1,16 @@
-/// obj_bullet  →  Step  （完整替换）
+/// obj_bullet  →  Step  
 
 // ── 1. 直线运动 ─────────────────────────────────────
 x += lengthdir_x(spd, dir);
 y += lengthdir_y(spd, dir);
 
-// ── 2. 默认先检查墙体 / 破坏砖块 ────────────────────
+// ── 2. 先检墙体 / 破坏砖块 ────────────────────
 if (place_meeting(x, y, obj_solid) || place_meeting(x, y, obj_breakable)) {
     instance_destroy();
     exit;
 }
 
-// ── 3. 检测另一颗子弹（可选：只炸掉自己）─────────────
+// ── 3. 检另一颗子弹─────────────
 if (place_meeting(x, y, obj_bullet) && instance_place(x, y, obj_bullet) != id) {
     instance_destroy();
     exit;
@@ -33,5 +33,5 @@ if (target != noone && target != id) {
     exit;
 }
 
-// ── 5. 飞行寿命结束 ────────────────────────────────
+// ── 5. 飞行寿命 ────────────────────────────────
 if (--life <= 0) instance_destroy();

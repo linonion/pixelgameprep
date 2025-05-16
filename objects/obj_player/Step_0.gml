@@ -1,4 +1,4 @@
-/// obj_player → Step  （整段替换）
+/// obj_player → Step
 
 // ───────────────────────────────────────────
 // 0. 生命值检测
@@ -22,7 +22,7 @@ vsp = v * cur_spd;
 x += hsp;  if (place_meeting(x,y,obj_solid)) x -= hsp;
 y += vsp;  if (place_meeting(x,y,obj_solid)) y -= vsp;
 
-// 4. 行走动画与朝向（仅在非攻击）
+// 4. 行走动画与朝向（仅非攻击）
 if (state == "IDLE")
 {
     if (h != 0 || v != 0)

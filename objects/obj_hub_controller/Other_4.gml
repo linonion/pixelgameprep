@@ -1,4 +1,4 @@
-/// obj_hub_controller → Room Start  (改成这样)
+/// obj_hub_controller → Room Start  
 for (var i = 0; i < global.level_total; i++)
 {
     var npc_obj = global.npc_list[i];

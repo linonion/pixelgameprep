@@ -1,7 +1,8 @@
+// player attack setting
 function scr_player_attack(_range, _halfAngle)
 {
     //--------------------------------------
-    // ① 对敌人
+    // 对敌人
     if (has_weapon)
     with (obj_enemy_parent)
     {
@@ -17,7 +18,7 @@ function scr_player_attack(_range, _halfAngle)
     }
 
     //--------------------------------------
-    // ② 对可破砖
+    // 对可破砖
     with (obj_breakable)
     {
         var dist = point_distance(other.x, other.y, x, y);

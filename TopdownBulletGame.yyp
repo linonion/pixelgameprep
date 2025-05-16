@@ -45,7 +45,6 @@
     {"$GMIncludedFile":"","%Name":"npc2_collectible.txt","CopyToMask":-1,"filePath":"datafiles","name":"npc2_collectible.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"npc2.txt","CopyToMask":-1,"filePath":"datafiles","name":"npc2.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"player.txt","CopyToMask":-1,"filePath":"datafiles","name":"player.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"snd_type.wav","CopyToMask":-1,"filePath":"datafiles/soundseffect","name":"snd_type.wav","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"thanks_0.txt","CopyToMask":-1,"filePath":"datafiles","name":"thanks_0.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"thanks_1.txt","CopyToMask":-1,"filePath":"datafiles","name":"thanks_1.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"thanks_2.txt","CopyToMask":-1,"filePath":"datafiles","name":"thanks_2.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
