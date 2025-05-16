@@ -1,6 +1,6 @@
 # pixelgameprep
 
-# 🌙 From the Dead 
+# From the Dead 
 
 > *A bittersweet bullet-hell roguelike about getting a second chance—  
 >  and dodging everything the Underworld throws at you.*
@@ -18,6 +18,19 @@
 | **Tile 尺寸**    | 16 × 16 为主                                                                          |
 | **音效 / 音乐**  | 计划：Hub 主题 + 关卡多段变调 BGM                                                                           |
 | **彩蛋**         | ？                                                                                      |
+
+---
+
+## Core Mechanics & Controls
+
+| Action            | Key(s)                        | Description                                                      |
+|-------------------|-------------------------------|------------------------------------------------------------------|
+| Move              | ↑ / ↓ / ← / →                | Navigate the character up, down, left, and right.                |
+| Dash / Fast Walk  | Hold **A** + direction key    | Sprint in the held direction for faster movement.                |
+| Talk              | Bump into NPC                 | Touching an NPC automatically initiates dialogue.                |
+| Attack 1      | **J**                         | Short-range strike.                                              |
+| Attack 2     | **K**                         | Long-range strike.                                    |
+| Fast-forward Text | **Space**                     | Accelerate the text scroll in the dialogue box.                  |
 
 ---
 
