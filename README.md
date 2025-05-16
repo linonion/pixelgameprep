@@ -1,95 +1,62 @@
 # pixelgameprep
 
-# Game Name:《逃离社交压力》(eye escape?)
+# From the Dead 
 
-## Game Type
+> *A bittersweet bullet-hell roguelike about getting a second chance—  
+>  and dodging everything the Underworld throws at you.*
 
-* **视角**：2D Top-down
-* **游戏模式**：弹幕式躲避类游戏
+---
 
-## Possible Structure
+## Gameplay
 
-```plaintext
-Assets/
-│
-├── Scripts/
-│   ├── Player/
-│   │   └── PlayerController.cs (玩家移动、碰撞)
-│   ├── Enemies/
-│   │   ├── EnemySpawner.cs (目光敌人生成)
-│   │   └── EnemyMovement.cs (敌人移动逻辑)
-│   ├── Mechanics/ (Optional）
-│   │   ├── CourageSystem.cs (勇气格挡系统)
-│   │   └── SocialBattery.cs (能量条控制)
-│   ├── UI/
-│   │   ├── UIManager.cs (界面控制)
-│   │   └── HUDController.cs (实时界面更新)
-│   └── Managers/
-│       ├── GameManager.cs (整体流程管理)
-│       └── AudioManager.cs (音效管理)
-│
-├── Art/
-│   ├── Player/
-│   ├── Enemies/
-│   ├── Backgrounds/
-│   └── UI/
-│
-├── Audio/
-│   ├── Music/
-│   └── SFX/
-│
-└── Scenes/
-    ├── MainMenu.unity
-    └── Gameplay.unity
+| 项目             | 规格 / 说明                                                                                          |
+|------------------|-------------------------------------------------------------------------------------------------------|
+| **核心玩法**     | 有参考灵感来源《Rogue Sentry》                                                    |
+| **关卡结构**     | - **Hub**：320 × 180<br>- **普通房间**：640 × 360<br>- **Boss 房**：待定                         |
+| **Camera 视口**  | 320 × 180（随房间滚动）                                                                                |
+| **主角尺寸**     | 大约40 × 40 px                                                                                            |
+| **Tile 尺寸**    | 16 × 16 为主                                                                          |
+| **音效 / 音乐**  | 计划：Hub 主题 + 关卡多段变调 BGM                                                                           |
+| **彩蛋**         | ？                                                                                      |
+
+---
+
+## Core Mechanics & Controls
+
+| Action            | Key(s)                        | Description                                                      |
+|-------------------|-------------------------------|------------------------------------------------------------------|
+| Move              | ↑ / ↓ / ← / →                | Navigate the character up, down, left, and right.                |
+| Dash / Fast Walk  | Hold **A** + direction key    | Sprint in the held direction for faster movement.                |
+| Talk              | Bump into NPC                 | Touching an NPC automatically initiates dialogue.                |
+| Attack 1      | **J**                         | Short-range strike.                                              |
+| Attack 2     | **K**                         | Long-range strike.                                    |
+| Fast-forward Text | **Space**                     | Accelerate the text scroll in the dialogue box.                  |
+
+---
+
+## Structure
+
+```text
+pixelgameprep/
+├─ datafiles/ # 文档
+├─ scripts/ # GML 代码
+├─ rooms/ # *.yy 房间资源
+├─ objects/ # 实例对象
+├─ sounds/ # 音乐
+├─ sprites/ 
+├─ TopdownBulletGame.yyp
+└─ README.md
+
+详细请看scripts和objects的具体gml文档
 ```
-
 ---
 
-## Core Development
+## Tools
 
-### 🔹 Phase 1（Basic mechanics）
-
-1. **玩家移动控制**（PlayerController）
-2. **敌人生成和移动逻辑**（EnemySpawner、EnemyMovement）
-3. **基础碰撞检测**
-
-### 🔸 Phase 2（Optional）
-
-4. **社交能量条**（SocialBattery）
-5. **格挡与反击系统**（CourageSystem）
-6. **道具**（?）
-
-### 🔹 Phase 3（Main Menu）
-
-7. **用户界面（UI）设计**
-8. **游戏流程和关卡设计**（GameManager）
-9. **音效与音乐整合**（AudioManager）
-
----
-
-## 时间规划
+| tool | version                          |
+|------|----------------------------------------|
+| **GameMaker Studio** | 2024.13.0.190               |
+| **Git**             | 2.45.0   |
 
 
-## 免费音乐与音效资源
 
-* **音乐**：
-
-  * [Incompetech](https://incompetech.com/music/)
-  * [OpenGameArt](https://opengameart.org/art-search-advanced?field_art_type_tid[]=12)
-
-* **音效**：
-
-  * [Freesound](https://freesound.org/)
-  * [Kenney音效](https://kenney.nl/assets?q=audio)
-
----
-
-
-## 主要目标
-
-* 保持游戏难度逐步提升，给予玩家明确的反馈和成就感。
-* 可以在jam开始之前做简单的demo，美术同样可以先做简单的demo 
-* 聚焦基础玩法 + 整体风格统一
-* 完成后导出WebGL版便于展示
-
----
