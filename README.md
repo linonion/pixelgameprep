@@ -21,8 +21,9 @@
 
 ---
 
-## 目录结构
+## Structure
 
+```text
 pixelgameprep/
 ├─ datafiles/ # 文档
 ├─ scripts/ # GML 代码
@@ -37,13 +38,12 @@ pixelgameprep/
 
 ---
 
-## 开发环境
+## Tools
 
-| 工具 | 版本                           |
+| tool | version                          |
 |------|----------------------------------------|
-| **GameMaker Studio** | version2024.13.0.190               |
+| **GameMaker Studio** | 2024.13.0.190               |
 | **Git**             | 2.45.0   |
-| **Merge Tool**      |  Git |
 
 
 
