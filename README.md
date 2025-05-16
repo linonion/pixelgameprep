@@ -35,7 +35,7 @@ pixelgameprep/
 └─ README.md
 
 详细请看scripts和objects的具体gml文档
-
+```
 ---
 
 ## Tools
