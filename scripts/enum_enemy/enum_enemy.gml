@@ -1,0 +1,3 @@
+/// scripts/enum_enemy.gml
+enum MOVE_TYPE  { STAY, LINEAR, CIRCLE, RANDOM }
+enum SHOOT_TYPE { NONE, RING, FAN, SPIRAL, TOWARD_PLAYER }
