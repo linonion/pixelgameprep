@@ -1,95 +1,50 @@
 # pixelgameprep
 
-# Game Name:《逃离社交压力》(eye escape?)
+# 🌙 From the Dead （工作代号）
 
-## Game Type
-
-* **视角**：2D Top-down
-* **游戏模式**：弹幕式躲避类游戏
-
-## Possible Structure
-
-```plaintext
-Assets/
-│
-├── Scripts/
-│   ├── Player/
-│   │   └── PlayerController.cs (玩家移动、碰撞)
-│   ├── Enemies/
-│   │   ├── EnemySpawner.cs (目光敌人生成)
-│   │   └── EnemyMovement.cs (敌人移动逻辑)
-│   ├── Mechanics/ (Optional）
-│   │   ├── CourageSystem.cs (勇气格挡系统)
-│   │   └── SocialBattery.cs (能量条控制)
-│   ├── UI/
-│   │   ├── UIManager.cs (界面控制)
-│   │   └── HUDController.cs (实时界面更新)
-│   └── Managers/
-│       ├── GameManager.cs (整体流程管理)
-│       └── AudioManager.cs (音效管理)
-│
-├── Art/
-│   ├── Player/
-│   ├── Enemies/
-│   ├── Backgrounds/
-│   └── UI/
-│
-├── Audio/
-│   ├── Music/
-│   └── SFX/
-│
-└── Scenes/
-    ├── MainMenu.unity
-    └── Gameplay.unity
-```
+> *A bittersweet bullet-hell roguelike about getting a second chance—  
+>  and dodging everything the Underworld throws at you.*
 
 ---
 
-## Core Development
+## Gameplay Snapshot
 
-### 🔹 Phase 1（Basic mechanics）
-
-1. **玩家移动控制**（PlayerController）
-2. **敌人生成和移动逻辑**（EnemySpawner、EnemyMovement）
-3. **基础碰撞检测**
-
-### 🔸 Phase 2（Optional）
-
-4. **社交能量条**（SocialBattery）
-5. **格挡与反击系统**（CourageSystem）
-6. **道具**（?）
-
-### 🔹 Phase 3（Main Menu）
-
-7. **用户界面（UI）设计**
-8. **游戏流程和关卡设计**（GameManager）
-9. **音效与音乐整合**（AudioManager）
+| 项目             | 规格 / 说明                                                                                          |
+|------------------|-------------------------------------------------------------------------------------------------------|
+| **核心玩法**     | 《Rogue Sentry》式房间切换弹幕 + 轻度 Roguelite 养成                                                    |
+| **关卡结构**     | - **Hub**：320 × 180<br>- **普通房间**：1280 × 640<br>- **Boss 房**：自由尺寸                           |
+| **Camera 视口**  | 640 × 320（随房间滚动）                                                                                |
+| **主角尺寸**     | 40 × 40 px                                                                                            |
+| **Tile 尺寸**    | 16 × 16 为主，少量 8 × 8 装饰                                                                          |
+| **美术特色**     | 中式奈何桥、雾蒙蒙彼岸、可破坏 / 不可破坏砖块                                                          |
+| **音效 / 音乐**  | Hub 主题 + 关卡多段变调 BGM                                                                           |
+| **彩蛋**         | “薯片”隐藏房间                                                                                        |
 
 ---
 
-## 时间规划
+## 目录结构
 
+pixelgameprep/
+├─ datafiles/ # 文档
+├─ scripts/ # GML 代码
+├─ rooms/ # *.yy 房间资源
+├─ objects/ # 实例对象
+├─ sounds/ # 音乐
+├─ sprites/ 
+├─ TopdownBulletGame.yyp
+└─ README.md
 
-## 免费音乐与音效资源
-
-* **音乐**：
-
-  * [Incompetech](https://incompetech.com/music/)
-  * [OpenGameArt](https://opengameart.org/art-search-advanced?field_art_type_tid[]=12)
-
-* **音效**：
-
-  * [Freesound](https://freesound.org/)
-  * [Kenney音效](https://kenney.nl/assets?q=audio)
 
 ---
 
+## ⚙️ 开发环境
 
-## 主要目标
+| 工具 | 版本                           |
+|------|----------------------------------------|
+| **GameMaker Studio** | ling version2024.13.0.190               |
+| **Git**             | ling 2.45.0    请考虑用2.20+    |
+| **Merge Tool**      |  Git |
 
-* 保持游戏难度逐步提升，给予玩家明确的反馈和成就感。
-* 可以在jam开始之前做简单的demo，美术同样可以先做简单的demo 
-* 聚焦基础玩法 + 整体风格统一
-* 完成后导出WebGL版便于展示
+如果用win上的gamemaker可能需要处理Windows 和 macOS 的路径符号差异（未验证）
 
----
+
