@@ -37,5 +37,5 @@
     "name":"spr_tiles_test_1",
     "path":"sprites/spr_tiles_test_1/spr_tiles_test_1.yy",
   },
-  "visible":false,
+  "visible":true,
 }
