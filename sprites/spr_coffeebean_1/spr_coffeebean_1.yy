@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
   "%Name":"spr_coffeebean_1",
-  "bboxMode":0,
-  "bbox_bottom":25,
+  "bboxMode":2,
+  "bbox_bottom":22,
   "bbox_left":9,
-  "bbox_right":22,
+  "bbox_right":23,
   "bbox_top":8,
   "collisionKind":1,
   "collisionTolerance":0,

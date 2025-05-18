@@ -37,5 +37,10 @@ state       = "IDLE"; // "IDLE" / "ATK1" / "ATK2"
 shoot_cd     = 12;    // 200ms
 shoot_timer  = 0;
 
+// 敌人碰撞参数
 
+knock_len  = 25;      // 推回距离
+knock_cd   = 0;      // 弹开冷却
 
+hurt_cd    = 30;      // 无敌帧计数（闪白时减 1）
+flash_step = 0;      // 用于 Draw 闪白
