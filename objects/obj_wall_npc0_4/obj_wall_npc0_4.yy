@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wall_invis",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_wall_npc0_4",
+  "eventList":[],
   "managed":true,
-  "name":"obj_wall_invis",
+  "name":"obj_wall_npc0_4",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -32,10 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":true,
-  "spriteId":null,
-  "spriteMaskId":{
-    "name":"spr_tiles_test_1",
-    "path":"sprites/spr_tiles_test_1/spr_tiles_test_1.yy",
+  "spriteId":{
+    "name":"Sprite37",
+    "path":"sprites/Sprite37/Sprite37.yy",
   },
+  "spriteMaskId":null,
   "visible":true,
 }

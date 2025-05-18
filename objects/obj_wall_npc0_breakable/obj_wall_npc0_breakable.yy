@@ -1,19 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wall_invis",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_wall_npc0_breakable",
+  "eventList":[],
   "managed":true,
-  "name":"obj_wall_invis",
+  "name":"obj_wall_npc0_breakable",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"obj_solid",
-    "path":"objects/obj_solid/obj_solid.yy",
+    "name":"obj_breakable",
+    "path":"objects/obj_breakable/obj_breakable.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -32,10 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":true,
-  "spriteId":null,
-  "spriteMaskId":{
-    "name":"spr_tiles_test_1",
-    "path":"sprites/spr_tiles_test_1/spr_tiles_test_1.yy",
+  "spriteId":{
+    "name":"Sprite34",
+    "path":"sprites/Sprite34/Sprite34.yy",
   },
+  "spriteMaskId":null,
   "visible":true,
 }

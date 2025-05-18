@@ -28,13 +28,14 @@ max_hp =15;
 hp = max_hp;
 
 // 近战参数
-atk1_range  = 50;
-atk2_range  = 65;
+atk1_range  = 60;
+atk2_range  = 70;
 atk_cool    = 15;   // 共用冷却帧数
 atk_timer   = 0;    // 计时器
 state       = "IDLE"; // "IDLE" / "ATK1" / "ATK2"
 
 shoot_cd     = 12;    // 200ms
 shoot_timer  = 0;
+
 
 

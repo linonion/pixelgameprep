@@ -1,19 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wall_invis",
+  "%Name":"obj_npc0_enemy_1",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_wall_invis",
+  "name":"obj_npc0_enemy_1",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"obj_solid",
-    "path":"objects/obj_solid/obj_solid.yy",
+    "name":"obj_enemy_parent",
+    "path":"objects/obj_enemy_parent/obj_enemy_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -32,10 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":true,
-  "spriteId":null,
-  "spriteMaskId":{
-    "name":"spr_tiles_test_1",
-    "path":"sprites/spr_tiles_test_1/spr_tiles_test_1.yy",
+  "spriteId":{
+    "name":"spr_coffeebean_1",
+    "path":"sprites/spr_coffeebean_1/spr_coffeebean_1.yy",
   },
+  "spriteMaskId":null,
   "visible":true,
 }
