@@ -74,6 +74,7 @@
     {"id":{"name":"obj_mengo","path":"objects/obj_mengo/obj_mengo.yy",},},
     {"id":{"name":"obj_npc_parent","path":"objects/obj_npc_parent/obj_npc_parent.yy",},},
     {"id":{"name":"obj_npc0_enemy_1","path":"objects/obj_npc0_enemy_1/obj_npc0_enemy_1.yy",},},
+    {"id":{"name":"obj_npc0_enemy_2","path":"objects/obj_npc0_enemy_2/obj_npc0_enemy_2.yy",},},
     {"id":{"name":"obj_npc0_enemy","path":"objects/obj_npc0_enemy/obj_npc0_enemy.yy",},},
     {"id":{"name":"obj_npc0","path":"objects/obj_npc0/obj_npc0.yy",},},
     {"id":{"name":"obj_npc1","path":"objects/obj_npc1/obj_npc1.yy",},},

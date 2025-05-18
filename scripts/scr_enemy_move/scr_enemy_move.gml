@@ -48,9 +48,43 @@ function scr_enemy_move(ent)
             }
             break;
     }
+	// 判断边界
+    // 4 边界：minX / maxX / minY / maxY   
+	// ① 根据当前方向算位移向量
+	var dx = lengthdir_x(ent.speed, ent.direction);
+	var dy = lengthdir_y(ent.speed, ent.direction);
 
-    // 真正移动：在“没撞墙”时才执行
-    ent.x = nx;
-    ent.y = ny;
+	// ② 预测位置
+	var nx = ent.x + dx;
+	var ny = ent.y + dy;
+
+	// ③ 左右边界检测 → 翻转 dx
+	if (variable_instance_exists(ent,"minX") && nx < ent.minX) {
+	    nx = ent.minX;       // 贴边
+	    dx = -dx;            // 反弹
+	}
+	if (variable_instance_exists(ent,"maxX") && nx > ent.maxX) {
+	    nx = ent.maxX;
+	    dx = -dx;
+	}
+
+	// ④ 上下边界检测 → 翻转 dy
+	if (variable_instance_exists(ent,"minY") && ny < ent.minY) {
+	    ny = ent.minY;
+	    dy = -dy;
+	}
+	if (variable_instance_exists(ent,"maxY") && ny > ent.maxY) {
+	    ny = ent.maxY;
+	    dy = -dy;
+	}
+
+	// ⑤ 真正移动
+	ent.x = nx;
+	ent.y = ny;
+
+	// ⑥ 用新 dx,dy 重新定义方向（保持 0-360°）
+	if (dx != 0 || dy != 0) {
+	    ent.direction = (point_direction(0,0, dx, dy) + 360) mod 360;
+	}
 }
 
