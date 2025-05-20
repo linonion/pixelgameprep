@@ -7,4 +7,5 @@ if (!variable_global_exists("mengpo_intro_done"))
     global.mengpo_after0_done  = false;
     global.mengpo_after1_done  = false;
     global.mengpo_after2_done  = false;
+	global.mengpo_final_done   = false;
 }

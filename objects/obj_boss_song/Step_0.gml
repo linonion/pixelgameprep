@@ -1,33 +1,39 @@
-/// obj_boss_song → Step         // 受击闪白仍生效
-event_inherited();
+/// obj_boss_song → Step   （完整替换）
 
+event_inherited();      // 闪白硬直仍生效
 
+// 永远固定位置
 x = 300;
 y = 100;
-// 冷却计时
+
+// ── 冷却计数 ─────────────────────────────
 if (dialog_cd > 0) dialog_cd--;
 
-// 若有对白框或冷却中，跳过触发检测
+// ── 如需续播歌：对白结束 & CD=0 时启动循环 ─
+if (music_resume && !instance_exists(obj_dialogueBox) && dialog_cd == 0)
+{
+    music_id     = audio_play_sound(song_sound, 1, true);  // loop
+    music_resume = false;
+}
+
+// ── 若对白框存在或 CD>0，则不再检测距离 ──
 if (instance_exists(obj_dialogueBox) || dialog_cd > 0) exit;
 
-// 与玩家距离
+// ── 与玩家距离检测 ───────────────────────
 if (!instance_exists(obj_player)) exit;
 var dist = point_distance(x, y, obj_player.x, obj_player.y);
 
-// 0 → 1：第一次接近，启动歌曲 + 白
+// 第一次接近 → Intro对白 + 开始唱歌
 if (state == 0 && dist < trigger_dist)
 {
-    // 旁白
-    var lines = scr_load_txt("boss_song_intro.txt");
-    instance_create_layer(0,0,"GUI", obj_dialogueBox,
-        { lines: lines, speaker:" Someone looks exactly like the one in love" });
+    instance_create_layer(
+        0,0,"GUI", obj_dialogueBox,
+        { lines: scr_load_txt("boss_song_intro.txt"),
+          speaker: "歌者" });
 
-    // 播放歌曲（Loop）
-    music_id = audio_play_sound(snd_home, 1, true);
-
+    music_id  = audio_play_sound(song_sound, 1, true); // loop
     state     = 1;
-    dialog_cd = 20;             
+    dialog_cd = 20;           // 冷却⅓秒
 }
-
 
 
