@@ -1,1 +1,2 @@
-.../intro
+Press SPACE to continue dialogue./Use arrow keys to move./Press J or K to attack.
+

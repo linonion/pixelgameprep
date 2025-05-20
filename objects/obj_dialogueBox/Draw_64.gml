@@ -17,7 +17,7 @@ var draw_txt   = string_copy(full_txt, 1, floor(progress)); // 已经打出的�
 var h_name   = string_height(name_txt);                // 单行高
 var tag_h    = h_name + 4;                             // 名字条高度
 var h_body   = string_height_ext(full_txt, 0, max_w);  // 正文最大高度
-var box_h    = tag_h + h_body + pad * 3;               // 框总高
+var box_h    = tag_h + h_body + pad * 3 + 10;               // 框总高
 var box_y    = gh - box_h;                             // 永贴底
 
 // ── 3) 背景半透明──────────────────────────
@@ -41,5 +41,5 @@ draw_text_ext(
     pad,
     box_y + pad + tag_h + pad / 2,
     draw_txt,               // 只画已出现的部分
-    0,                      // 行距
+    10,                      // 行距
     max_w);                 // 最大行宽

@@ -38,6 +38,7 @@
     {"$GMIncludedFile":"","%Name":"clear_0.txt","CopyToMask":-1,"filePath":"datafiles","name":"clear_0.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"clear_1.txt","CopyToMask":-1,"filePath":"datafiles","name":"clear_1.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"clear_2.txt","CopyToMask":-1,"filePath":"datafiles","name":"clear_2.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"intro.txt","CopyToMask":-1,"filePath":"datafiles","name":"intro.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"locked.txt","CopyToMask":-1,"filePath":"datafiles","name":"locked.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"mengpo_after0.txt","CopyToMask":-1,"filePath":"datafiles","name":"mengpo_after0.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"mengpo_after1.txt","CopyToMask":-1,"filePath":"datafiles","name":"mengpo_after1.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -45,7 +46,6 @@
     {"$GMIncludedFile":"","%Name":"mengpo_final.txt","CopyToMask":-1,"filePath":"datafiles","name":"mengpo_final.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"mengpo_intro.txt","CopyToMask":-1,"filePath":"datafiles","name":"mengpo_intro.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"mengpo_random.txt","CopyToMask":-1,"filePath":"datafiles","name":"mengpo_random.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"intro.txt","CopyToMask":-1,"filePath":"datafiles","name":"intro.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"npc0_collectible.txt","CopyToMask":-1,"filePath":"datafiles","name":"npc0_collectible.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"npc0.txt","CopyToMask":-1,"filePath":"datafiles","name":"npc0.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"npc1_collectible.txt","CopyToMask":-1,"filePath":"datafiles","name":"npc1_collectible.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -62,7 +62,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.0.190",
+    "IDEVersion":"2024.13.1.193",
   },
   "name":"TopdownBulletGame",
   "resources":[
@@ -134,6 +134,7 @@
     {"id":{"name":"snd_fight","path":"sounds/snd_fight/snd_fight.yy",},},
     {"id":{"name":"snd_home","path":"sounds/snd_home/snd_home.yy",},},
     {"id":{"name":"snd_intro","path":"sounds/snd_intro/snd_intro.yy",},},
+    {"id":{"name":"snd_textbop","path":"sounds/snd_textbop/snd_textbop.yy",},},
     {"id":{"name":"snd_type","path":"sounds/snd_type/snd_type.yy",},},
     {"id":{"name":"spr_bg0","path":"sprites/spr_bg0/spr_bg0.yy",},},
     {"id":{"name":"spr_bg1_tree","path":"sprites/spr_bg1_tree/spr_bg1_tree.yy",},},

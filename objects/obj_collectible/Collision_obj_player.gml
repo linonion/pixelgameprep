@@ -14,3 +14,4 @@ if (!instance_exists(obj_dialogueBox))
 
 // 4 删除自身
 instance_destroy();
+

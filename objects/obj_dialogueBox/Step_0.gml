@@ -7,7 +7,7 @@ progress += spd;
 var cur_char = floor(progress);
 if (cur_char > last_char && cur_char <= string_length(lines[index]))
 {
-    audio_play_sound(snd_type, 0, false);
+    //audio_play_sound(snd_textbop, 0, false);
     last_char = cur_char;
 }
 
