@@ -1,6 +1,10 @@
 /// obj_player → Step
 
 // ───────────────────────────────────────────
+
+//对话cd
+if (variable_global_exists("dialog_cd") && global.dialog_cd > 0)
+    global.dialog_cd--;
 // 0. 生命值检测
 if (instance_exists(obj_dialogueBox)) exit;
 

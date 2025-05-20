@@ -10,7 +10,7 @@
 // ---------- 1. 选对白文件 & target_room ----------
 var dlg_file;
 var tgt_room = -1;                         // -1 = 对话完留在原房
-
+if (global.dialog_cd > 0) exit;
 switch (status)
 {
     case -1:                               // 尚未解锁

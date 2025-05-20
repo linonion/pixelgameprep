@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_collectible",
-    "path":"sprites/spr_collectible/spr_collectible.yy",
+    "name":"spr_collect0",
+    "path":"sprites/spr_collect0/spr_collect0.yy",
   },
   "spriteMaskId":null,
   "visible":true,

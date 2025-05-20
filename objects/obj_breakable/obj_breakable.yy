@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"spr_tiles_test",
-    "path":"sprites/spr_tiles_test/spr_tiles_test.yy",
+    "name":"spr_collectible",
+    "path":"sprites/spr_collectible/spr_collectible.yy",
   },
   "spriteMaskId":null,
   "visible":true,

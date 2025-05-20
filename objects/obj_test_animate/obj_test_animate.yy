@@ -27,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_test_animate",
-    "path":"sprites/spr_test_animate/spr_test_animate.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

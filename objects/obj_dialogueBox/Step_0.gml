@@ -18,6 +18,7 @@ if (keyboard_check_pressed(vk_space) && progress >= string_length(lines[index]))
     if (index >= array_length(lines))   // 全部对白播完
     {
         if (target_room != -1) room_goto(target_room);
+		global.dialog_cd = 10;  
         instance_destroy();
     }
     else {

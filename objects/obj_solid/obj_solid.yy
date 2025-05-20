@@ -28,14 +28,11 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"spr_tiles_test_1",
     "path":"sprites/spr_tiles_test_1/spr_tiles_test_1.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_tiles_test_1",
-    "path":"sprites/spr_tiles_test_1/spr_tiles_test_1.yy",
-  },
-  "visible":true,
+  "spriteMaskId":null,
+  "visible":false,
 }

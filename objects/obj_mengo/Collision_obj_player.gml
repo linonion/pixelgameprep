@@ -1,4 +1,5 @@
 /// obj_mengpo → Collision
+if (global.dialog_cd > 0) exit;
 
 if (instance_exists(obj_dialogueBox)) exit;   // 避免多开
 
@@ -48,6 +49,8 @@ else
     var rnd = irandom(array_length(rand_lines)-1);
     lines = [ rand_lines[rnd] ];
 }
+
+
 
 instance_create_layer(0,0,"GUI", obj_dialogueBox,
     { lines: lines, speaker: speaker_name, target_room: -1 });

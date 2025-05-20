@@ -10,8 +10,8 @@
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"obj_solid",
-    "path":"objects/obj_solid/obj_solid.yy",
+    "name":"obj_breakable",
+    "path":"objects/obj_breakable/obj_breakable.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"spr_npc0wall_3",
-    "path":"sprites/spr_npc0wall_3/spr_npc0wall_3.yy",
+    "name":"spr_npc0_wall_5",
+    "path":"sprites/spr_npc0_wall_5/spr_npc0_wall_5.yy",
   },
   "spriteMaskId":null,
   "visible":true,

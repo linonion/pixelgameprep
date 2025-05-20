@@ -11,3 +11,5 @@ index       = 0;
 progress    = 0;
 spd         = 0.8;           
 last_char   = 0;             // for sound
+
+if (!variable_global_exists("dialog_cd")) global.dialog_cd = 0;

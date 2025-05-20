@@ -27,6 +27,9 @@ can_attack = false;
 max_hp =15;
 hp = max_hp;
 
+if (!variable_global_exists("dialog_cd"))
+    global.dialog_cd = 0;
+
 // 近战参数
 atk1_range  = 60;
 atk2_range  = 70;
