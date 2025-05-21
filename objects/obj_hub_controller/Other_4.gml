@@ -13,5 +13,6 @@ for (var i = 0; i < global.level_total; i++)
 with (obj_player)
 {
     has_weapon = false;
-    x = 320; y = 180;
+    x = room_width / 2;
+	y = room_height - 64;
 }

@@ -4,6 +4,8 @@ switch (state)
     case 0:
         if (--delay_start <= 0)
         {
+			// 播放角色掉落动画（出现在中间偏下）
+			//instance_create_layer(room_width / 2, room_height / 2 + 40, "Instances", obj_player_fall);
             var lines = scr_load_txt("intro.txt");
             instance_create_layer(0,0,"GUI", obj_dialogueBox,
                 { lines: lines, speaker: "" });
